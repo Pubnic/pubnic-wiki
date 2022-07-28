@@ -2,7 +2,7 @@
 title: Funções Built-in ou Funções Embutidas
 description: 
 published: true
-date: 2022-07-28T14:46:52.859Z
+date: 2022-07-28T14:53:26.232Z
 tags: 
 editor: markdown
 dateCreated: 2022-06-23T01:35:42.499Z
@@ -1018,4 +1018,33 @@ Saída:
 24
 ```
 
-## Função 
+## Função round()
+Essa função retorna um número de ponto flutuante que é uma versão arredondada do número especificado, com o número especificado de decimais.
+
+### Sintaxe
+`round(number, digits)`
+
+**number** : O número que deve ser arredondado.
+
+**digits** : É o número para o qual o número dado deve ser arredondado, e é um parâmetro opcional.
+
+### Exemplos
+```python
+#  inteiros 
+print(round(20))  
+  
+# Ponto flutuante
+print(round(17.8))  
+
+# Arredondar para duas casas decimais
+x = round(5.76543, 2)
+print(x)
+```
+
+Saída:
+
+```
+20
+18
+5.77
+```
