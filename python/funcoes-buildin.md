@@ -2,7 +2,7 @@
 title: Funções Built-in ou Funções Embutidas
 description: 
 published: true
-date: 2022-07-28T14:53:26.232Z
+date: 2022-07-28T14:56:21.015Z
 tags: 
 editor: markdown
 dateCreated: 2022-06-23T01:35:42.499Z
