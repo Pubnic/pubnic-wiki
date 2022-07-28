@@ -2,7 +2,7 @@
 title: Funções Built-in ou Funções Embutidas
 description: 
 published: true
-date: 2022-07-28T01:15:23.497Z
+date: 2022-07-28T14:46:52.859Z
 tags: 
 editor: markdown
 dateCreated: 2022-06-23T01:35:42.499Z
@@ -938,15 +938,15 @@ A print()função imprime a mensagem especificada na tela ou em outro dispositiv
 ### Sintaxe
 `print(object(s), sep=separator, end=end, file=file, flush=flush)` 
 
-object(s): É um objeto a ser impresso. O símbolo * indica que pode haver mais de um objeto.
+**object(s)**: É um objeto a ser impresso. O símbolo * indica que pode haver mais de um objeto.
 
-sep='separator' (opcional): Os objetos são separados por sep. O valor padrão de setembro é ' '.
+**sep='separator'** (opcional): Os objetos são separados por sep. O valor padrão de setembro é ' '.
 
-end='end' (opcional): determina qual objeto deve ser impresso por último.
+**end='end'** (opcional): determina qual objeto deve ser impresso por último.
 
-file (opcional): - O arquivo deve ser um objeto com o método `write(string)`. Se for omitido, será usado `sys.stdout` que imprime objetos na tela.
+**file** (opcional): - O arquivo deve ser um objeto com o método `write(string)`. Se for omitido, será usado `sys.stdout` que imprime objetos na tela.
 
-flush (opcional): Se True, o fluxo é liberado à força. O valor padrão de flush é False.
+**flush** (opcional): Se True, o fluxo é liberado à força. O valor padrão de flush é False.
 
 ### Exemplos
 ```python
@@ -967,3 +967,55 @@ Pubnic é revolucionaria
 x = 7
 x = 7 = y
 ```
+
+## Função range()
+A função range() retorna uma sequência de números, começando em 0 por padrão e incrementa em 1 (por padrão) e para antes de um número especificado.
+
+### Sintaxe
+`range(start, stop, step)`
+
+**start** (opcional): É um número inteiro que especifica a posição inicial. O valor padrão é 0.
+
+**stop** (opcional): É um inteiro que especifica a posição final.
+
+**step** (opcional): É um inteiro que especifica o incremento de um número. O valor padrão é 1.
+
+### Exemplos
+Sequência de números de 3 a 7 que imprime cada item na sequência:
+
+```python
+x = range(3, 8)
+
+for n in x:
+  print(n)
+```
+Saída:
+```
+3
+4
+5
+6
+7
+```
+
+Sequência de números de 3 a 24, mas incrementa em 3 em vez de 1:
+
+```python
+x = range(3, 25, 3)
+for n in x:
+  print(n)
+```
+Saída:
+
+```
+3
+6
+9
+12
+15
+18
+21
+24
+```
+
+## Função 
