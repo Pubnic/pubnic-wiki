@@ -2,7 +2,7 @@
 title: Funções Built-in ou Funções Embutidas
 description: 
 published: true
-date: 2022-07-28T14:56:21.015Z
+date: 2022-08-01T13:06:28.046Z
 tags: 
 editor: markdown
 dateCreated: 2022-06-23T01:35:42.499Z
@@ -1047,4 +1047,107 @@ Saída:
 20
 18
 5.77
+```
+
+## Função set()
+Em python, um set (conjunto) é uma classe interna e essa função é um construtor dessa classe. Ele é usado para criar um novo conjunto usando elementos passados durante a chamada. Ele recebe iterável como argumento e retorna um novo objeto de conjunto. Além disso, os itens em um set list não são ordenados, então eles aparecerão em ordem aleatória.
+
+### Sintaxe
+`set([iterable]) ` 
+
+**iterable** : uma coleção de elementos imutáveis.
+
+### Exemplo
+```python
+r1 = set('241')  
+r2 = set('pubnic')  
+ 
+print(r1)  
+print(r2)  
+```
+
+Saída:
+```
+{'1', '2', '4'}
+{'p', 'u', 'b', 'i', 'c', 'n'}
+```
+
+## Função sorted()
+Essa função é usada para classificar elementos. Você pode especificar a ordem crescente ou decrescente. As strings são classificadas em ordem alfabética e os números são classificados numericamente. Leva quatro argumentos e retorna a coleção na ordem classificada. No caso de um dicionário, ele classifica apenas chaves, não valores.
+
+### Sintaxe
+
+`sorted(iterable, key=key, reverse=reverse)`
+
+**iterable** : A sequência para classificar, listar, dicionário, tupla etc.
+**key**(Opcional): Uma função a ser executada para decidir a ordem. O padrão é Nenhum
+**reverse**(Opcional): Um booleano.` False` classificará de forma crescente, `True` classificará de forma decrescente. O padrão é falso.
+
+### Exemplo
+
+```python
+a = ("b", "g", "a", "d", "f", "c", "h", "e")
+x = sorted(a)
+print(x)
+```
+
+Saída: 
+```
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+```
+
+## Função str()
+Converte um valor especificado em uma string.
+
+### Sintaxe
+`str(object, encoding=encoding, errors=errors)`  
+
+
+**object** : Qualquer objeto. Especifica o objeto a ser convertido em uma string.
+**encoding** : É a codificação do objeto. O valor padrão é UTF-8.
+**errors** : especifica as ações que precisam ser executadas se a decodificação falhar.
+
+### Exemplo
+```python
+a = str('9')
+print(a)
+```
+Saída:
+
+```
+'9'
+```
+
+## Função zip()
+
+A função zip() retorna um objeto zip, que mapeia um índice semelhante de vários contêineres. Ele recebe iteráveis(pode ser zero ou mais), o torna um iterador que agrega os elementos com base nos iteráveis passados e retorna um iterador de tuplas.
+
+### Sintaxe
+`zip(iterator1, iterator2, iterator3 ...)  `
+**iterator1, iterator2, iterator3**: Estes são objetos iteradores que se uniram.
+
+### Exemplo
+```python
+numeroLista = [4,5, 6]  
+strLista = ['four', 'five', 'six']  
+  
+# Nenhum iterável passado
+resultado = zip()  
+  
+# Convertendo iterável para lista  
+resultadoLista = list(resultado)  
+print(resultadoLista)  
+  
+# Dois iteráveis são passados 
+resultado = zip(numeroLista, strLista)  
+  
+# Convertendo iterador para set 
+resultadoSet = set(resultado)  
+print(resultadoSet)  
+```
+
+Saída:
+```
+[]
+{(5, 'five'), (6, 'six'), (4, 'four')}
 ```
