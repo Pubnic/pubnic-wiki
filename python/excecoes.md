@@ -2,7 +2,7 @@
 title: Exceções
 description: 
 published: true
-date: 2022-08-30T11:33:34.105Z
+date: 2022-08-30T12:24:17.661Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-30T00:48:36.999Z
@@ -178,6 +178,6 @@ KeyError: 'coelho'
 > Para obter uma lista completa de exceções internas do Python, consulte a [Documentação do Python ](https://docs.python.org/3/library/exceptions.html).
 {.is-info}
 
-
-
+## Manipulando Exceções em Python
+Para manipular e capturar as exceções, usa-se o bloco `try` e `except`. Nele, o python executa o código seguindo a instrução `try` como parte normal do código. Já a parte que segue a instrução `except`, apresenta a resposta do programa a quaisquer exceções da cláusula `try` anterior.
 
