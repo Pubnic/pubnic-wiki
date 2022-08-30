@@ -1,8 +1,8 @@
 ---
-title: Exceções em Python
+title: Exceções
 description: 
 published: true
-date: 2022-08-30T01:25:46.397Z
+date: 2022-08-30T11:33:34.105Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-30T00:48:36.999Z
