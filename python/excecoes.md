@@ -2,7 +2,7 @@
 title: Exceções
 description: 
 published: true
-date: 2022-08-30T12:45:47.815Z
+date: 2022-08-30T12:47:52.732Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-30T00:48:36.999Z
@@ -186,7 +186,7 @@ Para manipular e capturar as exceções, usa-se o bloco `try` e `except`. Nele, 
 </div>
 </center>
 
-
+Conforme o diagrama acima, quando o código sintaticamente correto é executado em um erro, o Python lançará um erro de exceção. Este erro de exceção travará o programa se não for tratado. A cláusula except determina como seu programa responde as exceções.
 
 
 
