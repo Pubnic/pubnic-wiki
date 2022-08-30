@@ -2,7 +2,7 @@
 title: Exceções
 description: 
 published: true
-date: 2022-08-30T12:24:17.661Z
+date: 2022-08-30T12:45:47.815Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-30T00:48:36.999Z
@@ -180,4 +180,17 @@ KeyError: 'coelho'
 
 ## Manipulando Exceções em Python
 Para manipular e capturar as exceções, usa-se o bloco `try` e `except`. Nele, o python executa o código seguindo a instrução `try` como parte normal do código. Já a parte que segue a instrução `except`, apresenta a resposta do programa a quaisquer exceções da cláusula `try` anterior.
+<center> 
+<div class="cat">
+    <img src="/try_except.png" width="300" height="300"  />
+</div>
+</center>
+
+
+
+
+
+
+
+
 
