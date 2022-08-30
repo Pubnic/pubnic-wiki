@@ -1,8 +1,8 @@
 ---
-title: Exceções
+title: Exceções em Python
 description: 
 published: true
-date: 2022-08-30T00:48:36.999Z
+date: 2022-08-30T01:25:46.397Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-30T00:48:36.999Z
@@ -45,6 +45,139 @@ Porém, quase todas as classes de *exceção incorporadas* herdam da `Exceptionc
 
 > Esta página mostra uma [hierarquia de classes completa para exceções internas em Python ](https://docs.python.org/3/library/exceptions.html#exception-hierarchy).
 {.is-info}
+
+## Tipos de exceção incorporados padrão
+
+Existem inumeras exceções, uma para cada situação de erro. Abaixo são apresentadas as mais comuns.
+
+- `NameError` – Gerado quando um nome não existe entre variáveis locais ou globais:
+
+Ex:
+```python
+print(x)
+```
+
+Saída:
+```
+Traceback (most recent call last):
+  File "./prog.py", line 1, in <module>
+NameError: name 'x' is not defined
+```
+
+- `TypeError` – Gerado quando uma operação é executada em um tipo de dados inaplicável:
+
+Ex:
+```python
+print(2+'2')
+```
+Saída:
+```
+Traceback (most recent call last):
+  File "./prog.py", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+```
+
+- `ValueError` – Gerado quando uma operação ou função recebe um valor inválido de um argumento:
+
+Ex:
+```python
+print(int('d'))
+```
+Saída:
+```
+Traceback (most recent call last):
+  File "./prog.py", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'd'
+```
+
+- `IndexError` – Gerado quando um índice não existe em um iterável:
+
+Ex:
+```python
+print('dog'[3])
+```
+Saida:
+```
+Traceback (most recent call last):
+  File "./prog.py", line 1, in <module>
+IndexError: string index out of range
+```
+- `IndentationError` – Gerado quando o recuo está incorreto:
+
+Ex:
+```python
+for i in range(3):
+print(i)
+```
+Saída:
+```
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/py_compile.py", line 144, in compile
+    code = loader.source_to_code(source_bytes, dfile or file,
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./prog.py", line 2
+    print(i)
+    ^
+IndentationError: expected an indented block
+```
+
+- `ZeroDivisionError` – Ocorre na tentativa de dividir um número por zero:
+
+Ex:
+```python
+print(5/0)
+```
+Saída:
+```
+Traceback (most recent call last):
+  File "./prog.py", line 1, in <module>
+ZeroDivisionError: division by zero
+```
+
+- `ImportError` – Gerado quando uma instrução de importação está incorreta:
+
+Ex:
+```python
+from numpy import pandas
+```
+Saída:
+```
+Traceback (most recent call last):
+  File "./prog.py", line 1, in <module>
+ImportError: cannot import name 'pandas' from 'numpy' (/usr/local/lib/python3.8/dist-packages/numpy/__init__.py)
+```
+
+- `AttributeError` – Gerado na tentativa de atribuir ou referenciar um atributo inaplicável para um determinado objeto Python:
+
+Ex: 
+```python
+print('a'.sum())
+```
+Saída:
+```
+Traceback (most recent call last):
+  File "./prog.py", line 1, in <module>
+AttributeError: 'str' object has no attribute 'sum'
+```
+
+- `KeyError` – Gerado quando a chave está ausente no dicionário:
+
+Ex:
+```python
+animals = {'gato': 1, 'cachorro': 2}
+print(animals['coelho'])
+
+```
+Saída:
+```
+Traceback (most recent call last):
+  File "./prog.py", line 2, in <module>
+KeyError: 'coelho'
+```
+> Para obter uma lista completa de exceções internas do Python, consulte a [Documentação do Python ](https://docs.python.org/3/library/exceptions.html).
+{.is-info}
+
 
 
 
