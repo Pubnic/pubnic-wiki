@@ -2,7 +2,7 @@
 title: Exceções
 description: 
 published: true
-date: 2022-08-30T12:54:08.108Z
+date: 2022-08-30T13:01:00.706Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-30T00:48:36.999Z
@@ -205,5 +205,17 @@ Por favor, declare a variável x primeiro
 1
 ```
 
+A exceção foi tratada com o bloco except, foi recebida uma mensagem personalizada significativa do que exatamente deu errado e como corrigi-lo. Além disso, desta vez, o programa não parou de funcionar assim que encontrou a exceção e executou o resto do código. 
 
-
+Anteriormente, antecipou-se e tratou-se apenas um tipo de exceção, mais especificamente, um NameError. A desvantagem dessa abordagem é que a parte do código na cláusula `except` tratará todos os tipos de exceções da mesma maneira e produzirá a mesma mensagem: *"Por favor, declare a variável x primeiro"*. Para evitar isso, é possivel mencionar explicitamente o tipo de exceção que precisa-se capturar e tratar logo após o comando `except`:
+Ex:
+```python
+try:
+    print(x)
+except NameError:
+    print('Por favor, declare a variável x primeiro')
+```
+Saída:
+```
+Por favor, declare a variável x primeiro
+```
