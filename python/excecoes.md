@@ -2,7 +2,7 @@
 title: Exceções
 description: 
 published: true
-date: 2022-08-31T13:25:40.552Z
+date: 2022-08-31T13:32:36.512Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-30T00:48:36.999Z
@@ -410,8 +410,41 @@ Uma vez que não ocorreu nenhuma exceção, o bloco `else` foi executado.
 
 ## Declaração finally
 
+A finally é uma outra instrução opcional, que deve ser adicionada após todas as cláusulas, incluindo o `else`. Ela é executada em qualquer caso, mesmo que não tenha sido levantada uma exceção na cláusula `try`. Incluindo no exemplo anterior:
 
+```python
+try:
+    print(5/0)
+except ZeroDivisionError:
+    print('Você não pode dividir por zero')
+else:
+    print('A divisão foi realizada com sucesso')
+finally:
+    print('Esta mensagem é sempre impressa')
+```
+Saída:
+```
+Você não pode dividir por zero
+Esta mensagem é sempre impressa
+```
+Sem levantar a exceção:
 
+```python
+try:
+    print(5/2)
+except ZeroDivisionError:
+    print('Você não pode dividir por zero')
+else:
+    print('A divisão foi realizada com sucesso')
+finally:
+    print('Esta mensagem é sempre impressa')
+```
+Saída:
+```
+2.5
+A divisão foi realizada com sucesso
+Esta mensagem é sempre impressa
+```
 
-
-
+Assim, em ambos os casos, a cláusula `finally` gera a mesma mensagem.
+ 
