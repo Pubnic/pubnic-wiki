@@ -2,7 +2,7 @@
 title: Exceções
 description: 
 published: true
-date: 2022-08-31T13:13:04.997Z
+date: 2022-08-31T13:25:40.552Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-30T00:48:36.999Z
@@ -374,6 +374,44 @@ Saída:
 ```
 {'sucesso': False, 'mensagem': 'division by zero', 'resultado': None}
 ```
-Com isso, conclui-se que as exceções do Python são objetos de classes, que são as subclasses da classe BaseException. Além disso,trata-se a exceção do mais específico para o menos específico.
+Com isso, conclui-se que as exceções do Python são objetos de classes, que são as subclasses da classe `BaseException`. Além disso, trata-se a exceção do mais específico para o menos específico.
+
+## Declaração else
+
+Além das cláusulas `try` e `except`, pode-se usar um comando `else` opcional. Caso se utilize esse comando, ele deve ser adicionado após todas as cláusulas except e ter sua execução somente se não ocorrer nenhuma exceção na cláusula try. No exemplo abaixo será tratada uma divisão por zero:
+
+```python
+try:
+    print(5/0)
+except ZeroDivisionError:
+    print('Você não pode dividir por zero')
+else:
+    print('A divisão foi realizada com sucesso')
+```
+Saída:
+```
+Você não pode dividir por zero
+```
+A exceção foi capturada e tratada no bloco except e, portanto, a cláusula else foi ignorada. Ao se fornecer um número diferente de zero:
+```python
+try:
+    print(5/2)
+except ZeroDivisionError:
+    print('Você não pode dividir por zero')
+else:
+    print('A divisão foi realizada com sucesso')
+```
+Saída:
+```
+2.5
+A divisão foi realizada com sucesso
+```
+Uma vez que não ocorreu nenhuma exceção, o bloco `else` foi executado.
+
+## Declaração finally
+
+
+
+
 
 
