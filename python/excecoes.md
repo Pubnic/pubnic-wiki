@@ -2,7 +2,7 @@
 title: Exceções
 description: 
 published: true
-date: 2022-08-30T13:01:00.706Z
+date: 2022-08-31T13:13:04.997Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-30T00:48:36.999Z
@@ -219,3 +219,161 @@ Saída:
 ```
 Por favor, declare a variável x primeiro
 ```
+
+### Lidando com várias exceções
+Abaixo é apresentada uma função chamada `divisao`, que retorna o resultado de `a` dividido por `b`.
+
+Ex:
+```python
+def divisao(a, b):
+    return a / b
+
+c = divisao(5, 0)
+```
+Saída:
+```
+Traceback (most recent call last):
+  File "./prog.py", line 5, in <module>
+  File "./prog.py", line 2, in divisao
+ZeroDivisionError: division by zero
+```
+
+Para esse exemplo, ocorre a exceção `ZeroDivisionError` se b for zero. Logo, para manipular esse erro, usa-se o `try... except` da seguinte forma:
+
+```python
+def divisao(a, b):
+    try:
+        return {
+            'sucesso': True,
+            'mensagem': 'OK',
+            'resultado': a / b
+        }
+    except ZeroDivisionError as e:
+        return {
+            'sucesso': False,
+            'mensagem': 'b nao pode ser zero',
+            'resultado': None
+        }
+
+
+resultado = divisao(5, 0)
+print(resultado)
+```
+Saída:
+```
+{'sucesso': False, 'mensagem': 'b nao pode ser zero', 'resultado': None}
+```
+
+Caso não se pegue a exceção `ZeroDivisionError`, mas se use uma exceção mais geral como a classe `Exception`:
+
+```python
+def divisao(a, b):
+    try:
+        return {
+            'sucesso': True,
+            'mensagem': 'OK',
+            'resultado': a / b
+        }
+    except Exception as e:
+        return {
+            'sucesso': False,
+            'mensagem': 'b nao pode ser zero',
+            'resultado': None
+        }
+
+
+resultado = divisao(5, 0)
+print(resultado)
+```
+Saída:
+```
+{'sucesso': False, 'mensagem': 'b nao pode ser zero', 'resultado': None}
+```
+O programa irá funcionar como antes porque `try...except` também captura o tipo de exceção que é a subclasse da classe `Exception`. Porém,caso se use duas strings em vez de dois números para na função divisao(), a mesma mensagem irá ser mostrada como se a exceção `ZeroDivisionError` tivesse ocorrido:
+```python
+def divisao(a, b):
+    try:
+        return {
+            'sucesso': True,
+            'mensagem': 'OK',
+            'resultado': a / b
+        }
+    except Exception as e:
+        return {
+            'sucesso': False,
+            'mensagem': 'b nao pode ser zero',
+            'resultado': None
+        }
+
+
+resultado = divisao('1', '2')
+print(resultado)
+```
+Saída:
+```
+{'sucesso': False, 'mensagem': 'b nao pode ser zero', 'resultado': None}
+```
+Para este exemplo, a exceção não é, `ZeroDivisionError` mas o `TypeError`. Todavia, o código ainda o trata como a exceção `ZeroDivisionError`. Desse modo, sempre se deve tratar as exceções da mais específica para a menos específica. Por exemplo:
+```python
+def divisao(a, b):
+    try:
+        return {
+            'sucesso': True,
+            'mensagem': 'OK',
+            'resultado': a / b
+        }
+    except TypeError as e:
+        return {
+            'sucesso': False,
+            'mensagem': 'Ambos a e b devem ser números',
+            'resultado': None
+        }
+    except ZeroDivisionError as e:
+        return {
+            'sucesso': False,
+            'mensagem': 'b nao pode ser zero',
+            'resultado': None
+        }
+    except Exception as e:
+        return {
+            'sucesso': False,
+            'mensagem':  str(e),
+            'resultado': None
+        }
+
+
+resultado = divisao('1', '2')
+print(resultado)
+```
+Saída:
+```
+{'sucesso': False, 'mensagem': 'Ambos a e b devem ser números', 'resultado': None}
+```
+No exemplo acima, foram usadas as exceçoes `TypeError`, `ZeroDivisionError`, e `Exception` na ordem em que aparecem na instrução `try...except`. Cso o código que trata de diferentes exceções seja o mesmo, pode-se agrupar todas as exceções em uma, da seguinte forma:
+
+```python
+def divisao(a, b):
+    try:
+        return {
+            'sucesso': True,
+            'mensagem': 'OK',
+            'resultado': a / b
+        }
+    except (TypeError, ZeroDivisionError, Exception) as e:
+        return {
+            'sucesso': False,
+            'mensagem':  str(e),
+            'resultado': None
+        }
+
+
+resultado = divisao(5, 0)
+print(resultado)
+```
+Saída:
+```
+{'sucesso': False, 'mensagem': 'division by zero', 'resultado': None}
+```
+Com isso, conclui-se que as exceções do Python são objetos de classes, que são as subclasses da classe BaseException. Além disso,trata-se a exceção do mais específico para o menos específico.
+
+
