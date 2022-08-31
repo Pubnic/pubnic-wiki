@@ -2,7 +2,7 @@
 title: Exceções
 description: 
 published: true
-date: 2022-08-31T13:32:36.512Z
+date: 2022-08-31T13:33:34.976Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-30T00:48:36.999Z
