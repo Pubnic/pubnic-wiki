@@ -2,7 +2,7 @@
 title: Métodos
 description: 
 published: true
-date: 2022-09-01T14:10:04.080Z
+date: 2022-09-01T14:13:29.795Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-31T23:50:56.422Z
@@ -99,4 +99,8 @@ Abaixo será criada a instância da Minha_classe() e o método de classe será c
 ```python
 obj = Minha_classe()
 obj.metodo_classe()
+```
+Os métodos de classe podem ser acessados diretamente sem criar uma instância ou objeto da classe. Como por exemplo:
+```python
+Minha_class.metodo_classe()
 ```
