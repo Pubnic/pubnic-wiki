@@ -2,7 +2,7 @@
 title: Métodos
 description: 
 published: true
-date: 2022-09-01T13:39:55.638Z
+date: 2022-09-01T14:10:04.080Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-31T23:50:56.422Z
@@ -76,5 +76,27 @@ class Minha_classe:
 > `__init__()` é um tipo especial de método conhecido como construtor. Este método é chamado quando um objeto é criado a partir da classe e permite que a classe inicialize os atributos de uma classe.
 {.is-info}
 
- 
- 
+No exemplo acima, as palavras chave `self.a` e `self.b` ajudam a acessar as variáveis presentes no método `__init__()` da mesma classe.
+
+### Métodos de classe
+Métodos de classe são métodos que são chamados na própria classe, não em uma instância de objeto específica. Portanto, ele pertence a um nível de classe e todas as instâncias de classe compartilham um método de classe.
+
+- Um método de classe está vinculado à classe e não ao objeto da classe. 
+- Ele pode acessar apenas variáveis de classe e alem disso, modificar o estado da classe alterando o valor de uma variável de classe que se aplicaria a todos os objetos de classe.
+- Para definir um método de classe, deve-se especificar que é um método de classe com a ajuda do decorador `@classmethod`.
+- Os métodos de classe também recebem um parâmetro padrão - `cls`, que aponta para a classe. Ele não é obrigatorio, mas o melhor é seguir a convenção.
+
+Abaixo é apresentado um exemplo de como criar um método de classe:
+
+```python
+class Minha_classe:
+
+  @classmethod
+  def metodo_classe(cls):
+    return "Este é um método de classe."
+```
+Abaixo será criada a instância da Minha_classe() e o método de classe será chamado:
+```python
+obj = Minha_classe()
+obj.metodo_classe()
+```
