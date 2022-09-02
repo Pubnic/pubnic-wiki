@@ -2,7 +2,7 @@
 title: Métodos
 description: 
 published: true
-date: 2022-09-02T12:14:06.672Z
+date: 2022-09-02T12:14:24.233Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-31T23:50:56.422Z
@@ -135,7 +135,7 @@ Além disso, podem ser chamados diretamente, sem criar um objeto/instância da c
 Minha_classe.metodo_estatico()
 ```
 
-Os métodos podem ser resumids em tres pontos:
+Os métodos podem ser resumidos em tres pontos:
 
 - Um método de instância conhece sua instância (e a partir disso, sua classe)
 - Um método de classe conhece sua classe
