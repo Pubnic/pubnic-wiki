@@ -2,7 +2,7 @@
 title: Métodos
 description: 
 published: true
-date: 2022-09-02T12:14:24.233Z
+date: 2022-09-02T12:19:01.837Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-31T23:50:56.422Z
