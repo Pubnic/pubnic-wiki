@@ -2,7 +2,7 @@
 title: Métodos
 description: 
 published: true
-date: 2022-09-01T17:41:57.427Z
+date: 2022-09-02T00:59:13.390Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-31T23:50:56.422Z
@@ -104,3 +104,15 @@ Os métodos de classe podem ser acessados diretamente sem criar uma instância o
 ```python
 Minha_class.metodo_classe()
 ```
+
+Classe detalhada utilizando o metodo de classe:
+
+![metodo_classe.png](/metodo_classe.png){.align-center}
+
+
+
+
+
+
+
+
