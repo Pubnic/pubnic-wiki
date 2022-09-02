@@ -2,7 +2,7 @@
 title: Métodos
 description: 
 published: true
-date: 2022-09-02T00:59:13.390Z
+date: 2022-09-02T12:14:06.672Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-31T23:50:56.422Z
@@ -109,8 +109,38 @@ Classe detalhada utilizando o metodo de classe:
 
 ![metodo_classe.png](/metodo_classe.png){.align-center}
 
+### Métodos Estáticos
+Esses métodos não conseguem acessar os dados da classe, ou seja, não precisam acessar tais dados.Eles são autosuficientes e trabalham por conta própria. Um método estático está vinculado a uma classe em vez dos objetos dessa classe. Isso significa que um método estático pode ser chamado sem um objeto para essa classe. Isso também significa que os métodos estáticos não podem modificar o estado de um objeto, pois não estão vinculados a ele.
 
+O decorator `@staticmethod` é usado para definir um método estático. Diferente dos métodos de instância e métodos de classe, não é preciso passar nenhum parâmetro especial ou padrão.
 
+Ex:
+```python
+class Minha_classe:
+
+  @staticmethod
+  def metodo_estatico():
+    return "Este é um método estático."
+```
+Os métodos estaticos podem ser chamados usando um objeto/instância da classe:
+
+```
+obj = Minha_classe()
+obj.metodo_estatico()
+```
+
+Além disso, podem ser chamados diretamente, sem criar um objeto/instância da classe:
+
+```
+Minha_classe.metodo_estatico()
+```
+
+Os métodos podem ser resumids em tres pontos:
+
+- Um método de instância conhece sua instância (e a partir disso, sua classe)
+- Um método de classe conhece sua classe
+- Um método estático não conhece sua classe ou instância
+ 
 
 
 
