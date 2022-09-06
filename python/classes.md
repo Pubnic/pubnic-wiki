@@ -2,7 +2,7 @@
 title: Classes em Python
 description: 
 published: true
-date: 2022-09-06T02:15:36.091Z
+date: 2022-09-06T11:02:48.068Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-06T01:13:34.602Z
@@ -23,4 +23,25 @@ class MinhaClasse:
     pass
 ```
 A primeira string dentro da classe chama-se docstring e tem uma breve descrição sobre o conteúdo da classe. Embora não seja obrigatório, isso é altamente recomendado.
+
+Ao se definir uma classe, um objeto de classe é criado com o mesmo nome. Ele permite que diferentes atributos sejam acessados, assim como instanciar novos objetos de classe.
+
+### Sintaxe de definição de classe
+```
+Sintaxe de definição de classe:
+
+class ClassName:
+    # Declaração
+    
+Sintaxe de definição de objeto: 
+obj = ClassName()
+print(obj.atrr)
+```
+
+Pontos importantes:
+- As classes são criadas por classe de palavra-chave.
+- Atributos são as variáveis que pertencem a uma classe.
+- Os atributos são sempre públicos e podem ser acessados usando o operador ponto (.). Ex.: `Minhaclasse.Meuatributo`
+
+## Objeto de Classe
 
