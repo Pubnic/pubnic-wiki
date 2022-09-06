@@ -2,7 +2,7 @@
 title: Classes em Python
 description: 
 published: true
-date: 2022-09-06T01:13:34.602Z
+date: 2022-09-06T01:14:00.324Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-06T01:13:34.602Z
