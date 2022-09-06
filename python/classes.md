@@ -2,7 +2,7 @@
 title: Classes em Python
 description: 
 published: true
-date: 2022-09-06T12:33:42.691Z
+date: 2022-09-06T12:57:59.341Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-06T01:13:34.602Z
@@ -73,7 +73,7 @@ Ou seja, como `Pessoa.saudacao` é um objeto de função (atributo de classe), `
 As funções criadas dentro de uma classe são chamadas de métodos . Funções e métodos são essencialmente a mesma coisa, mas no contexto de objetos de classe, as funções são chamadas de métodos. É preciso criar alguns métodos para a classe para manipular e utilizar os dados fornecidos. No exemplo anterior, a função `saudacao()` é um método de classe.
 
 ##  Self
-No exemplo anterior, existe o parametro `self` na definição da função dentro da classe, todavia o método é chamado como se Maria.saudacao() não tivesse nehum argumento. Isso acontece porque, toda vez que um objeto chama seu método, o pŕoprio objeto é passado como primeiro argumento. Logo, Maria.saudacao() se traduz em `Pessoa.saudacao(Maria)`.
+No exemplo anterior, existe o parametro `self` na definição da função dentro da classe, todavia o método é chamado como se `Maria.saudacao()` não tivesse nenhum argumento. Isso acontece porque, toda vez que um objeto chama seu método, o pŕoprio objeto é passado como primeiro argumento. Logo, Maria.saudacao() se traduz em `Pessoa.saudacao(Maria)`.
 
 Pontos importantes:
 - Os métodos de classe devem ter um primeiro parâmetro extra na definição do método. Não é dado um valor para este parâmetro quando se chama o método, o Python o fornece.
@@ -168,3 +168,79 @@ Cor:  preto
 Acessando a variável de classe usando o nome da classe
 cachorro
 ```
+
+## Excluindo atributos e objetos
+Qualquer atributo de um objeto pode ser excluído a qualquer momento, usando a instrução `del`. No exemplo abaixo tem-se:
+
+```python
+class Pessoa:
+  def __init__(self, nome, idade):
+    self.nome = nome
+    self.idade = idade
+
+  def minhafuncao(self):
+    print(f"Oi meu nome é {self.nome}, tenho {self.idade} anos")
+
+p1 = Pessoa("John", 36)
+p1.minhafuncao()
+```
+Saída:
+```
+Oi meu nome é John, tenho 36 anos
+```
+
+Para excluir propriedades do objeto no exemplo acima usa-se `del p1.idade`:
+
+```python
+class Pessoa:
+  def __init__(self, nome, idade):
+    self.nome = nome
+    self.idade = idade
+
+  def minhafuncao(self):
+    print(f"Oi meu nome é {self.nome}, tenho {self.idade} anos")
+
+p1 = Pessoa("John", 36)
+del p1.idade
+
+print(p1.idade)
+```
+Saída:
+
+```
+Traceback (most recent call last):
+  File "./prog.py", line 12, in <module>
+AttributeError: 'Pessoa' object has no attribute 'idade'
+```
+Já para a exclusão de objetos, faz-se da seguinte maneira:
+
+```python
+class Pessoa:
+  def __init__(self, nome, idade):
+    self.nome = nome
+    self.idade = idade
+
+  def minhafuncao(self):
+    print(f"Oi meu nome é {self.nome}, tenho {self.idade} anos")
+
+p1 = Pessoa("John", 36)
+del p1
+
+print(p1)
+```
+
+Saída:
+```
+Traceback (most recent call last):
+  File "./prog.py", line 12, in <module>
+NameError: name 'p1' is not defined
+```
+
+Dessa forma, o melhor da classe do Python é que pode-se reutilizá-la sempre que quiser. Caso se queira criar outra pessoa, tudo o que se precisa fazer é instanciar outro objeto de classe.
+
+> Em geral, objetos de classe podem ser utilizados para organizar seu código em seus projetos de codificação. Mais informações sobre a classe do Python podem ser encontradas [aqui](https://docs.python.org/3/tutorial/classes.html) .
+{.is-info}
+
+
+
+
