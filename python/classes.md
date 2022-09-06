@@ -2,7 +2,7 @@
 title: Classes em Python
 description: 
 published: true
-date: 2022-09-06T11:22:48.033Z
+date: 2022-09-06T11:32:37.941Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-06T01:13:34.602Z
@@ -68,3 +68,12 @@ Maria = Pessoa()
 
 No bloco acima, é criada uma nova instancia de objeto chamada `Maria`. Os atributos do objeto podem ser acessados usando o prefixo do nome do objeto. Os atributos podem ser dados ou métodos. Os métodos de um objeto são funções correspondentes dessa classe.
 Ou seja, como `Pessoa.saudacao` é um objeto de função (atributo de classe), `Pessoa.saudacao` será um objeto de método.
+
+##  Self
+No exemplo anterior, existe o parametro self na definição da função dentro da classe, todavia o método é chamado como se Maria.saudacao() não tivesse nehum argumento. Isso acontece porque, toda vez que um objeto chama seu método, o pŕoprio objeto é passado como primeiro argumento. Logo, Maria.saudacao() se traduz em `Pessoa.saudacao(Maria)`.
+
+Pontos importantes:
+- Os métodos de classe devem ter um primeiro parâmetro extra na definição do método. Não é dado um valor para este parâmetro quando se chama o método, o Python o fornece.
+- Se existir um método que não aceita argumentos, ainda precisará ter um argumento.
+
+
