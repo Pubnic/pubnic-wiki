@@ -2,7 +2,7 @@
 title: Classes em Python
 description: 
 published: true
-date: 2022-09-06T11:02:48.068Z
+date: 2022-09-06T11:22:48.033Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-06T01:13:34.602Z
@@ -44,4 +44,27 @@ Pontos importantes:
 - Os atributos são sempre públicos e podem ser acessados usando o operador ponto (.). Ex.: `Minhaclasse.Meuatributo`
 
 ## Objeto de Classe
+Um objeto consiste em: 
 
+- `Estado`: É representado pelos atributos de um objeto. Também reflete as propriedades de um objeto.
+- `Comportamento`: É representado pelos métodos de um objeto. Também reflete a resposta de um objeto a outros objetos.
+- `Identidade`: Dá um nome exclusivo a um objeto e permite que um objeto interaja com outros objetos.
+
+O objeto de classe pode ser usado para acessar diferentes atributos. Também pode ser usado para criar novas instâncias de objetos (instanciação) dessa classe. O procedimento para criar um objeto é semelhante a uma chamada de função. Para uma classe pessoa, por exemplo:
+Ex:
+```python
+class Pessoa:
+    "Esta é uma classe de pessoa"
+    idade = 10
+
+    def saudacao(self):
+        print('Olá')
+```
+A chamada seria:
+
+```
+Maria = Pessoa()
+```
+
+No bloco acima, é criada uma nova instancia de objeto chamada `Maria`. Os atributos do objeto podem ser acessados usando o prefixo do nome do objeto. Os atributos podem ser dados ou métodos. Os métodos de um objeto são funções correspondentes dessa classe.
+Ou seja, como `Pessoa.saudacao` é um objeto de função (atributo de classe), `Pessoa.saudacao` será um objeto de método.
