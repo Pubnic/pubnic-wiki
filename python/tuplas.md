@@ -2,7 +2,7 @@
 title: Tuplas 
 description: 
 published: true
-date: 2022-09-07T03:12:41.006Z
+date: 2022-09-07T03:15:14.750Z
 tags: 
 editor: markdown
 dateCreated: 2022-05-30T14:32:58.137Z
@@ -152,9 +152,8 @@ print(numeros.index(20))
 ```
 E terá como saída o index, que no caso é 1.
 
-
-As tuplas podem ser compostas por strings, floats, listas, dicionários, etc.
-
+## Exemplos de tuplas
+As tuplas podem ser compostas por strings, floats, listas, dicionários, etc. Nos tópicos seguintes algumas dessas serão apresentadas.
 ### Tuplas de listas 
 É possível declarar uma tupla composta de listas, apesar da tupla ser imutável, é possível alterar os elementos da lista.
 Para declarar uma tupla de listas:
