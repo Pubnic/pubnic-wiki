@@ -2,7 +2,7 @@
 title: Tuplas 
 description: 
 published: true
-date: 2022-09-07T03:16:42.259Z
+date: 2022-09-07T03:17:39.668Z
 tags: 
 editor: markdown
 dateCreated: 2022-05-30T14:32:58.137Z
@@ -116,7 +116,7 @@ print(numeros[::1])
 (5)
 {.is-success}
 ### Modificação na tupla
-Como a tupla é uma estrutura de dados composta imutável, não é possível trocar o valor de um determinado elemento. Por exemplo, ao tentar modificar um elemento semelhante ao que é feito em [listas](/python/listas):
+Como a tupla é uma estrutura de dados composta imutável, não é possível trocar o valor de um determinado elemento. Por exemplo, ao tentar modificar um elemento semelhante ao que é feito em [listas](/e/pt-br/python/listas):
 
 ```python
 numeros = (5, 20, 30, 10, 12, 10)
