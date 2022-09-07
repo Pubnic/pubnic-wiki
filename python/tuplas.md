@@ -2,7 +2,7 @@
 title: Tuplas 
 description: 
 published: true
-date: 2022-09-07T03:15:14.750Z
+date: 2022-09-07T03:15:59.973Z
 tags: 
 editor: markdown
 dateCreated: 2022-05-30T14:32:58.137Z
@@ -166,7 +166,7 @@ Saída:
 {.is-success}
 
 ### Tuplas de dicionários
-As tuplas também podem ser formadas por dicionários, sendo declaradas da seguinte forma, para entender mais do dicionario clique [aqui](python/dicionarios) .
+As tuplas também podem ser formadas por dicionários, sendo declaradas da seguinte forma, para entender mais do dicionario clique [aqui](/dicionarios) .
 
 ```python
 t = ({"nome":"Luana"}, {"idade":19})
