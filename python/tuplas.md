@@ -2,7 +2,7 @@
 title: Tuplas 
 description: 
 published: true
-date: 2022-07-15T02:13:43.195Z
+date: 2022-09-07T02:30:18.458Z
 tags: 
 editor: markdown
 dateCreated: 2022-05-30T14:32:58.137Z
@@ -30,12 +30,15 @@ print(numeros.count(10))
 ```
 
 > Saída:
-3
+2
 {.is-success}
 
+A saída esperada é 2, pois o elemento 10 aparece duas vezes na tupla.
 ## Fatiamento em tuplas
-Assim como outras variáveis compostas em python, também é possível acessar os elementos de uma tupla, ou uma parte desses elementos por meio de índices. Em python os índices iniciam com 0, sendo assim, o primeiro elemento de uma tupla tem índice 0.Por exemplo, se desejo pegar o primeiro elemento da tupla declarada acima, acessamos com:
+Assim como outras variáveis compostas em python, também é possível acessar os elementos de uma tupla, ou uma parte desses elementos por meio de índices. 
+É importante lembrar que em python os índices iniciam com 0, sendo assim, o primeiro elemento de uma tupla tem índice 0. Por exemplo, se desejo pegar o primeiro elemento da tupla declarada acima, acessamos com:
 ```python
+numeros = (5, 20, 30, 10, 12, 10)
 print(numeros[0])
 ```
 O que terá como saída:
@@ -43,6 +46,7 @@ O que terá como saída:
 ### Acessando elementos de trás pra frente
 Também é possível acessar os elementos de trás pra frente, através de números negativos. Por exemplo, a seguinte entrada tendo como base a tupla declarada acima:
 ```python
+numeros = (5, 20, 30, 10, 12, 10)
 print(numeros[-1])
 ```
 Apresentaria o seguinte resultado: 
@@ -67,6 +71,7 @@ Outra alternativa para pegar um conjunto de elementos de uma tupla é utilizando
 
 Como exemplo:
 ```python
+numeros = (5, 20, 30, 10, 12, 10)
 print(numeros[1::])
 ```
 > Saída:
@@ -96,7 +101,10 @@ Então, o valor seria False.
 ## Índice de elemento de uma tupla 
 Em python, na manipulação de tuplas, existe o método `index()`, que serve para exibir o índice de um elemento de uma tupla. Por exemplo, se desejo saber em que índice consigo encontrar o elemento 20, basta executar a seguinte linha de código:
 ```python
+numeros = (5, 20, 30, 10, 12, 10)
 print(numeros.index(20))
 ```
 E terá como saída o index, que no caso é 1.
+
+Em python, as tuplas são muito importantes, pois são estruturas essenciais para armazenar dados que não devem ser modificados durante a execução do código.
 
