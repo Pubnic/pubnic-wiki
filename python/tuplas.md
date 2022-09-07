@@ -2,7 +2,7 @@
 title: Tuplas 
 description: 
 published: true
-date: 2022-09-07T03:07:11.438Z
+date: 2022-09-07T03:07:39.340Z
 tags: 
 editor: markdown
 dateCreated: 2022-05-30T14:32:58.137Z
@@ -180,4 +180,4 @@ Saída:
 
 Em python, as tuplas são muito importantes, pois são estruturas essenciais para armazenar dados que não devem ser modificados durante a execução do código.
 
-É possível encontrar informações mais detalhadas [aqui](https://penseallen.github.io/PensePython2e/12-tuplas.html).
+É possível encontrar informações mais detalhadas sobre tuplas [aqui](https://penseallen.github.io/PensePython2e/12-tuplas.html).
