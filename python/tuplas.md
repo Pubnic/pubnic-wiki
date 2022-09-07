@@ -2,7 +2,7 @@
 title: Tuplas 
 description: 
 published: true
-date: 2022-09-07T03:07:39.340Z
+date: 2022-09-07T03:12:41.006Z
 tags: 
 editor: markdown
 dateCreated: 2022-05-30T14:32:58.137Z
