@@ -2,7 +2,7 @@
 title: O básico de Python
 description: 
 published: true
-date: 2022-06-23T01:35:45.301Z
+date: 2022-09-08T14:27:24.355Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-08T01:38:02.223Z
