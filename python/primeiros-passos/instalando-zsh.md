@@ -2,7 +2,7 @@
 title: Instalando o terminal Oh My ZSH
 description: Um terminal feito de modo a ser interativo e com muitos atalhos/plugins para facilitar a vida
 published: true
-date: 2022-03-05T04:22:40.225Z
+date: 2022-09-22T16:39:11.843Z
 tags: 
 editor: markdown
 dateCreated: 2022-03-02T01:01:13.136Z
@@ -28,7 +28,11 @@ dateCreated: 2022-03-02T01:01:13.136Z
 	```
   chsh -s $(which zsh)
   ```
-- Será necessário reiniciar ou deslogar da sessão para ser aplicado.
+
+> Será necessário reiniciar ou deslogar da sessão para ser aplicado.
+{.is-warning}
+
+
 - Após, abra o terminal e verifique que ele mudou :D
 > Caso ainda tenha problemas, confira alguns links de ajuda no Google [clicando aqui](https://www.google.com/search?q=zsh+default+without+chsh)
 {.is-info}
