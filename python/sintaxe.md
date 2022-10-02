@@ -2,7 +2,7 @@
 title: Sintaxe do Python
 description: 
 published: true
-date: 2022-10-02T01:45:13.203Z
+date: 2022-10-02T02:02:36.350Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-02T01:18:52.085Z
@@ -59,10 +59,22 @@ Por fim, organizando o código dessa maneira, tem-se as seguintes vantagens:
 - Em segundo lugar, o estilo de codificação é essencialmente uniforme. Caso se precise manter o código de outro desenvolvedor, esse código será igual ao seu.
 - Terceiro, o código é mais legível e claro em comparação com outras linguagens de programação.
 
+## Comentários
+Os cometários são de grande importancia porque descrevem o motivo de um pedaço de código ter sido escrito. Quando o interpretador python executa o código, os cometarios são ignorados.
 
+Um cometário de linha única inicia com um símbolo de hashtag (#) seguido pelo comentario:
 
+```python
+# Este é um comentário de linha única em Python
+```
+Qualquer coisa na linha após o sinal de hashtag é ignorada pelo interpretador. Isso significa, por exemplo, que se pode ter comentários independentes como o mostrado anteriormente, bem como comentários embutidos que seguem uma declaração. Por exemplo:
 
+```python
+x  +=  2   # abreviação de x = x + 2
+```
 
+> Python não tem nenhuma sintaxe para comentários de várias linhas, como a /* ... */sintaxe usada em C e C++, embora strings de várias linhas sejam frequentemente usadas como substitutos para comentários de várias linhas.
+{.is-info}
 
 
 
