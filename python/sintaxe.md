@@ -2,7 +2,7 @@
 title: Sintaxe do Python
 description: 
 published: true
-date: 2022-10-02T02:02:36.350Z
+date: 2022-10-02T02:06:03.834Z
 tags: 
 editor: markdown
 dateCreated: 2022-10-02T01:18:52.085Z
