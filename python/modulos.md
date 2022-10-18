@@ -2,7 +2,7 @@
 title: Módulo
 description: 
 published: true
-date: 2022-10-18T14:49:45.275Z
+date: 2022-10-18T14:51:21.952Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-19T23:13:06.790Z
@@ -73,3 +73,4 @@ Saída:
 > 2.8284271247461903
 {.is-success}
 
+A saída será a distância entre os dois pontos.
