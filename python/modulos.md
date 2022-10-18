@@ -2,7 +2,7 @@
 title: Módulo
 description: 
 published: true
-date: 2022-10-18T14:24:01.697Z
+date: 2022-10-18T14:28:27.600Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-19T23:13:06.790Z
@@ -29,8 +29,13 @@ import math
 resultado = math.pow(4, 2)
 print(resultado)
 ```
+Saída: 
+> 16.0
+{.is-success}
 
-Podemos importar um módulo dessa da seguinte forma: 
+Dessa forma, como importamos a biblioteca como um todo no código, podemos utilizar qualquer uma das funcionalidades presentes nesta. No exemplo utilizamos a funcionalidade `pow` que calcula a potencialização de um número por outro, recebendo dois parâmetros: o primeiro deles a base e o segundo o expoente. Para utilizar das funcionalidades da biblioteca devemos utilizar o math.funcionalidade. 
+
+Podemos importar um módulo específico dessa biblioteca da seguinte forma: 
 ```python
 from math import sqrt
 
@@ -41,7 +46,7 @@ Saída:
 > 4.0
 {.is-success}
 
-O módulo importado a cima foi o sqrt, que realiza e devolve a raiz quadrada de um número, foi possível importar com from `biblioteca` import `módulo`. Dessa forma, só importamos essa única funcionalidade, que é o calculo da raiz quadrada. Isso facilita bastante e evita a reescrita de código. 
+O módulo importado a cima foi o sqrt, que realiza e devolve a raiz quadrada de um número, foi possível importar com from `biblioteca` import `módulo`. Dessa forma, só importamos essa única funcionalidade, que é o calculo da raiz quadrada. Isso facilita bastante e evita a reescrita de código. A importação foi específica e por isso, apenas o módulo sqrt está disponível para utilização. 
 
 Também é possível a criação de módulos a serem utilizados exclusivamente pelo projeto em questão, pois muitas vezes são scripts específicos e não existem bibliotecas para isso. Por exemplo, para 
 
