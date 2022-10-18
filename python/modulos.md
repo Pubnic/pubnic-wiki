@@ -2,7 +2,7 @@
 title: Módulo
 description: 
 published: true
-date: 2022-10-18T14:28:27.600Z
+date: 2022-10-18T14:49:45.275Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-19T23:13:06.790Z
@@ -20,6 +20,8 @@ No python já existem diversos módulos e bibliotecas que podem ser importados p
 - Numpy: Processamento de grandes vetores e matrizes.
 - Datetime: Utilizada para manipulação de data e hora.
 - TensorFlow: Utilizada para treinamento de Inteligência Artificial.
+
+### Importação 
 
 Existem muitas outras bibliotecas a serem utilizadas em python. Para incluir módulos no desenvolvimento de códigos utilizamos do comando import. Utilizando a biblioteca math como base, podemos importá-la da seguinte forma: 
 
@@ -48,5 +50,26 @@ Saída:
 
 O módulo importado a cima foi o sqrt, que realiza e devolve a raiz quadrada de um número, foi possível importar com from `biblioteca` import `módulo`. Dessa forma, só importamos essa única funcionalidade, que é o calculo da raiz quadrada. Isso facilita bastante e evita a reescrita de código. A importação foi específica e por isso, apenas o módulo sqrt está disponível para utilização. 
 
-Também é possível a criação de módulos a serem utilizados exclusivamente pelo projeto em questão, pois muitas vezes são scripts específicos e não existem bibliotecas para isso. Por exemplo, para 
+### Criação de módulo
+
+Também é possível a criação de módulos a serem utilizados exclusivamente pelo projeto em questão, pois muitas vezes são scripts específicos e não existem bibliotecas para isso. Por exemplo, se for necessário calcular a distância entre dois pontos de um plano cartesiano com o teorema de euclides, podemos criar um arquivo `euclides.py`, que vai conter o seguinte código:
+
+```python
+from math import sqrt
+
+def distancia(x1, y1, x2, y2):
+	soma = ((x2 - x1) ** 2) + ((y2 - y1) ** 2))
+  resultado = sqrt(soma)
+
+```
+Para utilização dessa função em outro arquivo, calculando a distnância entre os pontos (0, 1) e (2, 3) de um plano cartesiano, criaremos um arquivo` teste.py` que contenha o seguinte código: 
+
+```python
+import euclides
+
+print(euclides.distancia(0, 1, 2, 3))
+```
+Saída:
+> 2.8284271247461903
+{.is-success}
 
