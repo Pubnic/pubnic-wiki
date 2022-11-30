@@ -2,7 +2,7 @@
 title: Módulo
 description: 
 published: true
-date: 2022-10-18T14:51:21.952Z
+date: 2022-11-30T14:26:07.369Z
 tags: 
 editor: markdown
 dateCreated: 2022-09-19T23:13:06.790Z
@@ -74,3 +74,35 @@ Saída:
 {.is-success}
 
 A saída será a distância entre os dois pontos.
+
+### Importações
+Os módulos podem importar outros módulos, e de modo geral são adicionados no escopo global da função, isto é, fora de qualquer escopo de função ou classe. Existem algumas variantes da instrução import, por exemplo, para importar a função distância do módulo euclides desenvolvido anteriormente, podemos utilizar: 
+
+```python
+from euclides import distancia
+```
+
+Essas linhas de código não colocam o módulo em que a função foi importada no escopo de nomes globais, assim, euclides não estaria definido caso fosse chamado em qualquer local do código. 
+Para isso, existe uma importação que importa todos os nomes do módulo, exceto os que começam com '_'. 
+
+```python
+from euclides import *
+```
+
+Porém, a sua utilização não é considerada uma boa prática por dificultar a legibilidade do código, porém, alguns casos pode ser utilizada. 
+
+Outra forma de importação é utilizando a palavra reservada **as**, por exemplo: 
+
+```python
+import euclides as eucl
+```
+Isso importa o módulo, assim como as outras instruções, porém, com um nome diferente. Assim, para utilizar a função distancia do módulo euclides basta: 
+
+```python
+eucl.distancia(3, 2, 1, 0)
+```
+
+
+### Conclusão
+Caso queira conhecer mais sobre o funcionamento de módulos em python, é recomendado a leitura do seguinte conteúdo, disponível na documentação do python: 
+- https://docs.python.org/pt-br/3/tutorial/modules.html
