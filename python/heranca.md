@@ -2,7 +2,7 @@
 title: Herança
 description: 
 published: true
-date: 2022-11-30T16:01:50.048Z
+date: 2022-11-30T17:25:47.180Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-30T16:01:50.048Z
@@ -38,4 +38,7 @@ class Motocicleta(Veiculo):
   	
 ```
 
-O método super chama o método init da super classe, no caso, do veículo. 
+O método super chama o método init da super classe, no caso, do veículo. É necessário passar a classe base como parâmetro para indicar a herança. 
+Dessa forma, temos um comportamento interessante, pois a motocicleta, por ser um veículo, vai herdar todos os comportamentos de um veículo e ter alguns outros comportamentos únicos, esse é um conceito extremamente importante na programação orientada a objetos. 
+
+
