@@ -2,7 +2,7 @@
 title: Herança
 description: 
 published: true
-date: 2022-12-16T20:19:18.302Z
+date: 2022-12-16T20:20:11.659Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-30T16:01:50.048Z
@@ -35,7 +35,8 @@ Para a criação de um Aluno poderíamos adicionar características que existem 
 class Motocicleta(Veiculo): 
 	def __init__(self, nome, cpf, endereco, telefone, matricula, periodo):
   	super().__init__(nome, cpf, endereco, telefone)
-    self.cilindrada = cilindrada
+    self.matricula = matricula
+   	self.periodo = periodo
   	
 ```
 Para justificar a criação da classe filha, é necessário que pelo menos um atributo da classe a ser criada difere da classe herdada
