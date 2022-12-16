@@ -2,7 +2,7 @@
 title: Herança
 description: 
 published: true
-date: 2022-12-16T20:58:34.368Z
+date: 2022-12-16T21:01:35.306Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-30T16:01:50.048Z
