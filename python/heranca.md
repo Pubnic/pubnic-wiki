@@ -2,7 +2,7 @@
 title: Herança
 description: 
 published: true
-date: 2022-12-16T20:21:41.187Z
+date: 2022-12-16T20:45:47.327Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-30T16:01:50.048Z
@@ -11,16 +11,16 @@ dateCreated: 2022-11-30T16:01:50.048Z
 # Herança
 Herança é uma definição extremamente relacionada com programação orientada a objetos, e é um mecanismo na qual uma classe estende seus atributos e métodos para outras classes. 
 
-Por exemplo, suponha que em um programa fosse necessária a representação de alguns funcionários alunos e professores de uma universidade. Existem algumas informações que estão presentes em todos, que seriam informações que toda pessoa possui, e uma pessoa pode ser um funcionário, professor e aluno em uma universidade. Essa seria uma situação em que a herança é uma boa resolução do problema, pois minimizaria reescrita de código. 
+Por exemplo, suponha que em um programa fosse necessária a representação de alguns alunos e professores de uma universidade. Existem algumas informações que estão presentes em todos, que seriam informações que toda pessoa possui, e uma pessoa pode ser um funcionário, professor e aluno em uma universidade. Essa seria uma situação em que a herança é uma boa resolução do problema, pois minimizaria reescrita de código. 
 
-### Classe base
+### Classe mãe
 Para a situação citada anteriormente, seria possível a criação de uma classe pai chamada de pessoa que possuiria a seguinte estrutura e atributos: 
 > Para a representação de classes é interessante que inicie com letra maiúsula. 
 {.is-info}
 
 ```python
 class Pessoa: 
-	def __init__(self, nome, cpf, endereco, telefone): 
+	def __init__(self, nome, cpf, endereco, telefone, data_nascimento): 
   	self.nome = nome
     self.cpf = cpf
     self.endereco = endereco
@@ -32,7 +32,7 @@ Dessa forma, a função init seria um construtor para a classe Veiculo, ou seja,
 Para a criação de um Aluno poderíamos adicionar características que existem somente para motos, além de herdar o estado e comportamento da classe Pessoa: 
 
 ```python 
-class Aluno(Professor): 
+class Aluno(Pessoa): 
 	def __init__(self, nome, cpf, endereco, telefone, matricula, periodo):
   	super().__init__(nome, cpf, endereco, telefone)
     self.matricula = matricula
@@ -40,10 +40,26 @@ class Aluno(Professor):
   	
 ```
 
+
+
 Já a classe Professor, poderia ter os seguintes atributos: 
 
-Para justificar a criação da classe filha, é necessário que pelo menos um atributo da classe a ser criada difere da classe herdada
+```python 
+class Professor(Pessoa): 
+	def __init__(self, nome, cpf, endereco, telefone, formacao):
+  	super().__init__(nome, cpf, endereco, telefone)
+    self.formacao = formacao
+  	
+```
+
+> Para justificar a criação da classe filha, é necessário que pelo menos um atributo da classe a ser criada não esteja na classe base.  
+> 
+{.is-warning}
+
 O método super chama o método init da super classe, no caso, da pessoa. É necessário passar a classe base como parâmetro para indicar a herança. 
-Dessa forma, temos um comportamento interessante, pois o Aluno, por ser uma pessoa, vai herdar todos os comportamentos de um veículo e ter alguns outros comportamentos únicos, esse é um conceito extremamente importante na programação orientada a objetos. 
+Dessa forma, temos um comportamento interessante, pois o Aluno, por ser uma pessoa, vai herdar todos os comportamentos de uma pessoa, isso inclui atributos e métodos, além de possuir alguns outros comportamentos únicos, esse é um conceito extremamente importante na programação orientada a objetos. 
+
+### Métodos
+Além de herdar os atributos da classe da classe mãe, ou também chamada de superclasse, a classe filha, ou subclasse também herda todos os métodos privados da superclasse. Sendo assim, se na classe pessoa houvesse 
 
 
