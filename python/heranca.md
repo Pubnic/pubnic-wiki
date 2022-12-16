@@ -2,7 +2,7 @@
 title: Herança
 description: 
 published: true
-date: 2022-12-16T20:55:37.029Z
+date: 2022-12-16T20:58:34.368Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-30T16:01:50.048Z
@@ -81,3 +81,4 @@ class Pessoa:
   	return idade
 ```
 
+Caso fosse necessário descobrir a idade de um aluno, pela herança, esse método poderia ser facilmente acessado pela classe aluno
