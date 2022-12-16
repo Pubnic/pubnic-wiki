@@ -2,7 +2,7 @@
 title: Herança
 description: 
 published: true
-date: 2022-12-16T20:20:11.659Z
+date: 2022-12-16T20:21:41.187Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-30T16:01:50.048Z
@@ -32,13 +32,16 @@ Dessa forma, a função init seria um construtor para a classe Veiculo, ou seja,
 Para a criação de um Aluno poderíamos adicionar características que existem somente para motos, além de herdar o estado e comportamento da classe Pessoa: 
 
 ```python 
-class Motocicleta(Veiculo): 
+class Aluno(Professor): 
 	def __init__(self, nome, cpf, endereco, telefone, matricula, periodo):
   	super().__init__(nome, cpf, endereco, telefone)
     self.matricula = matricula
    	self.periodo = periodo
   	
 ```
+
+Já a classe Professor, poderia ter os seguintes atributos: 
+
 Para justificar a criação da classe filha, é necessário que pelo menos um atributo da classe a ser criada difere da classe herdada
 O método super chama o método init da super classe, no caso, da pessoa. É necessário passar a classe base como parâmetro para indicar a herança. 
 Dessa forma, temos um comportamento interessante, pois o Aluno, por ser uma pessoa, vai herdar todos os comportamentos de um veículo e ter alguns outros comportamentos únicos, esse é um conceito extremamente importante na programação orientada a objetos. 
