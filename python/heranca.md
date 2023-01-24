@@ -2,7 +2,7 @@
 title: Herança
 description: 
 published: true
-date: 2023-01-24T11:42:46.642Z
+date: 2023-01-24T11:46:31.762Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-30T16:01:50.048Z
@@ -35,7 +35,7 @@ Para a criação de um Aluno poderíamos adicionar características que existem 
 ```python 
 class Aluno(Pessoa): 
 	def __init__(self, nome, cpf, endereco, telefone, data_nascimento, matricula, periodo):
-  	super().__init__(nome, cpf, endereco, telefone)
+  	super().__init__(nome, cpf, endereco, telefone, data_nascimento)
     self.matricula = matricula
     self.periodo = periodo
   	
@@ -48,7 +48,7 @@ Já a classe Professor, poderia ter os seguintes atributos:
 ```python 
 class Professor(Pessoa): 
 	def __init__(self, nome, cpf, endereco, telefone, data_nascimento,  formacao):
-  	super().__init__(nome, cpf, endereco, telefone)
+  	super().__init__(nome, cpf, endereco, telefone, data_nascimento)
     self.formacao = formacao
   	
 ```
@@ -82,6 +82,9 @@ class Pessoa:
 ```
 
 Caso fosse necessário descobrir a idade de um aluno, pela herança, esse método poderia ser facilmente acessado pela classe aluno: 
+```
+aluno = aluno.Aluno('João', '07893837786', 'Avenida das Mangueiras', 61992255422, '2022-10-04')
+```
 
 
 Para obter uma maior conhecimento sobre herança em python, é recomendado visitar os seguintes materiais: 
