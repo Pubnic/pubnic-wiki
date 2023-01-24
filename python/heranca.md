@@ -2,7 +2,7 @@
 title: Herança
 description: 
 published: true
-date: 2023-01-24T11:40:26.941Z
+date: 2023-01-24T11:42:46.642Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-30T16:01:50.048Z
@@ -81,4 +81,8 @@ class Pessoa:
   	return idade
 ```
 
-Caso fosse necessário descobrir a idade de um aluno, pela herança, esse método poderia ser facilmente acessado pela classe aluno
+Caso fosse necessário descobrir a idade de um aluno, pela herança, esse método poderia ser facilmente acessado pela classe aluno: 
+
+
+Para obter uma maior conhecimento sobre herança em python, é recomendado visitar os seguintes materiais: 
+https://algoritmosempython.com.br/cursos/programacao-python/heranca/
