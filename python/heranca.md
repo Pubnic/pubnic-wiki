@@ -2,7 +2,7 @@
 title: Herança
 description: 
 published: true
-date: 2023-01-24T11:46:31.762Z
+date: 2023-01-24T11:47:32.089Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-30T16:01:50.048Z
@@ -81,7 +81,8 @@ class Pessoa:
   	return idade
 ```
 
-Caso fosse necessário descobrir a idade de um aluno, pela herança, esse método poderia ser facilmente acessado pela classe aluno: 
+Caso fosse necessário descobrir a idade de um aluno, pela herança, esse método poderia ser facilmente acessado pela classe aluno, segue a criação de um Objeto aluno e um exemplo de utilização do método `calcula_idade`:
+
 ```
 aluno = aluno.Aluno('João', '07893837786', 'Avenida das Mangueiras', 61992255422, '2022-10-04')
 ```
