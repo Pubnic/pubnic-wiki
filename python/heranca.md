@@ -2,7 +2,7 @@
 title: Herança
 description: 
 published: true
-date: 2023-01-24T11:47:32.089Z
+date: 2023-01-24T11:49:48.250Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-30T16:01:50.048Z
@@ -84,9 +84,10 @@ class Pessoa:
 Caso fosse necessário descobrir a idade de um aluno, pela herança, esse método poderia ser facilmente acessado pela classe aluno, segue a criação de um Objeto aluno e um exemplo de utilização do método `calcula_idade`:
 
 ```
-aluno = aluno.Aluno('João', '07893837786', 'Avenida das Mangueiras', 61992255422, '2022-10-04')
+aluno = aluno.Aluno('João', '07893837786', 'Avenida das Mangueiras', 61992255422, '2002-06-04', 222013177, 6)
+aluno.calcula_idade()
 ```
-
+O que apresentaria como retorno a idade atual do aluno.  
 
 Para obter uma maior conhecimento sobre herança em python, é recomendado visitar os seguintes materiais: 
 https://algoritmosempython.com.br/cursos/programacao-python/heranca/
