@@ -2,7 +2,7 @@
 title: Herança
 description: 
 published: true
-date: 2022-12-16T21:01:35.306Z
+date: 2023-01-24T11:40:09.386Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-30T16:01:50.048Z
@@ -37,7 +37,7 @@ class Aluno(Pessoa):
 	def __init__(self, nome, cpf, endereco, telefone, data_nascimento, matricula, periodo):
   	super().__init__(nome, cpf, endereco, telefone)
     self.matricula = matricula
-   	self.periodo = periodo
+   self.periodo = periodo
   	
 ```
 
